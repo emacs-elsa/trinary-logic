@@ -2,6 +2,30 @@
 
 See [Three-valued logic](https://en.wikipedia.org/wiki/Three-valued_logic).
 
+# Motivation
+
+Some problems are very awkwardly expressed in two-valued logic, mostly
+when we are dealing with uncertainty.
+
+A typical example is flow analysis.  Consider this piece of elisp
+code:
+
+``` emacs-lisp
+(let (a)
+  (if x
+      (setq a "a was set")
+    (message "we do nothing"))
+  a) ;; what is a?
+```
+
+If we now ask a question "is `a` a string?" the answer is not
+"definitely yes" nor "definitely no" but "maybe" because without
+knowing what `x` is we can't tell.
+
+This and many more use-cases can be found in
+[Elsa](https://github.com/emacs-elsa/Elsa), the Emacs Lisp Static
+Analyzer.
+
 # API
 
 ## Constructors
