@@ -49,4 +49,5 @@ See [Kleene logic](https://en.wikipedia.org/wiki/Three-valued_logic#Kleene_and_P
 * `trinary-not`
 * `trinary-and`
 * `trinary-or`
+* `trinary-happened`
 * `trinary-add-maybe` = X or maybe

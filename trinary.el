@@ -127,6 +127,38 @@ Truth table:
   (trinary--int-to-value
    (max (trinary-value left) (trinary-value right))))
 
+;; TODO: make better name for this
+(defun trinary-happened (left right)
+  "Could an event happen based on the observation of LEFT and RIGHT?
+
+Truth table:
+
+  | A | B | A  B |
+  |---+---+-------|
+  | T | T | T     |
+  | T | ? | ?     |
+  | T | F | ?     |
+  | ? | T | ?     |
+  | ? | ? | ?     |
+  | ? | F | ?     |
+  | F | T | ?     |
+  | F | ? | ?     |
+  | F | F | F     |
+
+The motivation here is branch analysis: we need to know if an
+event occurred surely or surely not, that is either on both
+branches or on neither.  In all other cases we don't know because
+we always only pick one branch but it is unknown which one will
+be the right one at the actual time of observation."
+  (cond
+   ((and (trinary-true-p left)
+         (trinary-true-p right))
+    (trinary-true))
+   ((and (trinary-false-p left)
+         (trinary-false-p right))
+    (trinary-false))
+   (t (trinary-maybe))))
+
 (defun trinary-add-maybe (value)
   "Add maybe to VALUE."
   (trinary-or value (trinary-maybe)))

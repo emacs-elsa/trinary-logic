@@ -152,4 +152,33 @@
         (expect (trinary-or (trinary-false) (trinary-maybe)) :to-equal (trinary-maybe)))
 
       (it "should return false₃ for false₃ or false₃"
-        (expect (trinary-or (trinary-false) (trinary-false)) :to-equal (trinary-false))))))
+        (expect (trinary-or (trinary-false) (trinary-false)) :to-equal (trinary-false))))
+
+    (describe "trinary-happened"
+
+      (it "should return true₃ for true₃ or true₃"
+        (expect (trinary-happened (trinary-true) (trinary-true)) :to-equal (trinary-true)))
+
+      (it "should return maybe₃ for true₃ or maybe₃"
+        (expect (trinary-happened (trinary-true) (trinary-maybe)) :to-equal (trinary-maybe)))
+
+      (it "should return maybe₃ for true₃ or false₃"
+        (expect (trinary-happened (trinary-true) (trinary-false)) :to-equal (trinary-maybe)))
+
+      (it "should return maybe₃ for maybe₃ or true₃"
+        (expect (trinary-happened (trinary-maybe) (trinary-true)) :to-equal (trinary-maybe)))
+
+      (it "should return maybe₃ for maybe₃ or maybe₃"
+        (expect (trinary-happened (trinary-maybe) (trinary-maybe)) :to-equal (trinary-maybe)))
+
+      (it "should return maybe₃ for maybe₃ or false₃"
+        (expect (trinary-happened (trinary-maybe) (trinary-false)) :to-equal (trinary-maybe)))
+
+      (it "should return maybe₃ for false₃ or true₃"
+        (expect (trinary-happened (trinary-false) (trinary-true)) :to-equal (trinary-maybe)))
+
+      (it "should return maybe₃ for false₃ or maybe₃"
+        (expect (trinary-happened (trinary-false) (trinary-maybe)) :to-equal (trinary-maybe)))
+
+      (it "should return false₃ for false₃ or false₃"
+        (expect (trinary-happened (trinary-false) (trinary-false)) :to-equal (trinary-false))))))
