@@ -1,3 +1,6 @@
+[![MELPA](https://melpa.org/packages/trinary-badge.svg)](https://melpa.org/#/trinary)
+[![MELPA Stable](https://stable.melpa.org/packages/trinary-badge.svg)](https://stable.melpa.org/#/trinary)
+
 # trinary = Three-valued logic for Emacs
 
 See [Three-valued logic](https://en.wikipedia.org/wiki/Three-valued_logic).
