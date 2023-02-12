@@ -8,7 +8,7 @@
 ;; Created: 25th August 2018
 ;; Package-requires: ((emacs "24"))
 ;; Keywords: languages
-;; Homepage: https://github.com/Fuco1/trinary-logic
+;; Homepage: https://github.com/emacs-elsa/trinary-logic
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
