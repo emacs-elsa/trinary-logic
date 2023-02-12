@@ -36,5 +36,9 @@ jobs:
         version: 'snapshot'
 
     - name: Run tests
-      run:
-        make ci
+      run: |
+        eask clean all
+        eask package
+        eask install
+        eask compile
+        eask exec buttercup -L . -L tests
