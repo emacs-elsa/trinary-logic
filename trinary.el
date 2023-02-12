@@ -29,6 +29,8 @@
 
 ;;; Code:
 
+(require 'cl-macs)
+
 (defconst trinary--true 1)
 (defconst trinary--maybe 0)
 (defconst trinary--false -1)
