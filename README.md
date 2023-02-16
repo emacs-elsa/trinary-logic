@@ -1,5 +1,6 @@
 [![MELPA](https://melpa.org/packages/trinary-badge.svg)](https://melpa.org/#/trinary)
 [![MELPA Stable](https://stable.melpa.org/packages/trinary-badge.svg)](https://stable.melpa.org/#/trinary)
+[![CI](https://github.com/emacs-elsa/trinary-logic/actions/workflows/test.yml/badge.svg)](https://github.com/emacs-elsa/trinary-logic/actions/workflows/test.yml)
 
 # trinary = Three-valued logic for Emacs
 
