@@ -18,6 +18,7 @@
 ;;; Code:
 
 (require 'trinary)
+(require 'buttercup)
 
 (describe "Trinary"
 
