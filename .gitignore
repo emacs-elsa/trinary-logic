@@ -1,3 +1,9 @@
-.cask/*
+*.elc
+/.cask
 /.eask
 /dist
+/.elsa
+
+# ELPA-generated files.
+/trinary-autoloads.el
+/trinary-pkg.el
