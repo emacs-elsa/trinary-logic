@@ -143,14 +143,9 @@ event occurred surely or surely not, that is either on both
 branches or on neither.  In all other cases we don't know because
 we always only pick one branch but it is unknown which one will
 be the right one at the actual time of observation."
-  (cond
-   ((and (trinary-true-p left)
-         (trinary-true-p right))
-    (trinary-true))
-   ((and (trinary-false-p left)
-         (trinary-false-p right))
-    (trinary-false))
-   (t (trinary-maybe))))
+  (if (eq (trinary-value left) (trinary-value right))
+      left
+    (trinary-maybe)))
 
 (defun trinary-add-maybe (value)
   "Add maybe to VALUE."
