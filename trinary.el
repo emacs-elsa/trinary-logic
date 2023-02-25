@@ -36,20 +36,11 @@
 (defconst trinary--false -1)
 
 (cl-defstruct (trinary
-               (:print-function 'trinary-print)
                (:constructor nil)
                (:constructor trinary-true (&aux (value trinary--true)))
                (:constructor trinary-maybe (&aux (value trinary--maybe)))
                (:constructor trinary-false (&aux (value trinary--false))))
   value)
-
-(defun trinary-print (value)
-  "Print trinary VALUE."
-  (let ((x (trinary-value value)))
-    (cond
-     ((= x trinary--false) "F")
-     ((= x trinary--maybe) "?")
-     ((= x trinary--true) "T"))))
 
 (defun trinary--int-to-value (x)
   "Convert X to `trinary' value."

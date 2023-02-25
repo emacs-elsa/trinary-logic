@@ -4,17 +4,6 @@
 
 (describe "Trinary"
 
-  (describe "print"
-
-    (it "should print true as T"
-      (expect (trinary-print (trinary-true)) :to-equal "T"))
-
-    (it "should print maybe as ?"
-      (expect (trinary-print (trinary-maybe)) :to-equal "?"))
-
-    (it "should print false as f"
-      (expect (trinary-print (trinary-false)) :to-equal "F")))
-
   (describe "predicates"
 
     (describe "trinary-true-p"
