@@ -29,7 +29,7 @@
 
 ;;; Code:
 
-(require 'cl-macs)
+(eval-when-compile (require 'cl-lib))
 
 (defconst trinary--true 1)
 (defconst trinary--maybe 0)
