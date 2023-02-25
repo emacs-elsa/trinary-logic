@@ -1,6 +1,6 @@
-;;; trinary.el --- Trinary logic. -*- lexical-binding: t -*-
+;;; trinary.el --- Trinary logic -*- lexical-binding: t -*-
 
-;; Copyright (C) 2018 Matúš Goljer
+;; Copyright (C) 2018-2023  Free Software Foundation, Inc.
 
 ;; Author: Matúš Goljer <matus.goljer@gmail.com>
 ;; Maintainer: Matúš Goljer <matus.goljer@gmail.com>
