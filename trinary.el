@@ -40,7 +40,7 @@
                (:constructor trinary-true (&aux (value trinary--true)))
                (:constructor trinary-maybe (&aux (value trinary--maybe)))
                (:constructor trinary-false (&aux (value trinary--false))))
-  value)
+  (value nil :type integer :read-only t))
 
 (defun trinary--int-to-value (x)
   "Convert X to `trinary' value."
