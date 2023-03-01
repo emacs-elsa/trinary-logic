@@ -1,4 +1,4 @@
-(package "trinary" "1.0.0" "Trinary logic.")
+(package "trinary" "1.2.1" "Trinary logic.")
 
 (website-url "https://github.com/emacs-elsa/trinary-logic")
 (keywords "languages")

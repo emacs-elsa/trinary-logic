@@ -1,7 +1,7 @@
 (source melpa)
 (source gnu)
 
-(package "trinary" "1.0.0" "Trinary logic.")
+(package "trinary" "1.2.1" "Trinary logic.")
 
 (development
  (depends-on "dash")

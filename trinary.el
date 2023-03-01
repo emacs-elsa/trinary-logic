@@ -4,7 +4,7 @@
 
 ;; Author: Matúš Goljer <matus.goljer@gmail.com>
 ;; Maintainer: Matúš Goljer <matus.goljer@gmail.com>
-;; Version: 1.0.0
+;; Version: 1.2.1
 ;; Created: 25th August 2018
 ;; Package-requires: ((emacs "24"))
 ;; Keywords: languages
