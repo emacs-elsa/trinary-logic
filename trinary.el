@@ -70,6 +70,10 @@
   "Return non-nil if it is necessary that VALUE is true₂."
   (trinary-true-p value))
 
+(defun trinary-from-bool (value)
+  "Convert boolean value to trinary value."
+  (if value (trinary-true) (trinary-false)))
+
 (defun trinary-not (a)
   "Negate the VALUE.
 

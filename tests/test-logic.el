@@ -22,6 +22,16 @@
 
 (describe "Trinary"
 
+  (describe "constructors"
+
+    (describe "trinary-from-bool"
+
+      (it "for t"
+        (expect (trinary-true-p (trinary-from-bool t)) :to-be t))
+
+      (it "for nil"
+        (expect (trinary-false-p (trinary-from-bool nil)) :to-be t))))
+
   (describe "predicates"
 
     (describe "trinary-true-p"
